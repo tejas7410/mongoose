@@ -1,9 +1,9 @@
 import express from 'express';
 import mongoose from 'mongoose';
 
-import { User } from './models/user.model.js';
-import { Todo } from './models/todo.model.js';
-import { SubTodo } from './models/subtodo.model.js';
+import { User } from './models/Todo/user.model.js';
+import { Todo } from './models/Todo/todo.model.js';
+import { SubTodo } from './models/Todo/subtodo.model.js';
 import { connectDB } from './config/db.js';
 
 const app = express();

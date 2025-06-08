@@ -1,6 +1,6 @@
-# ✅ Mongoose Todo App (User, Todo, SubTodo)
+# ✅ Mongoose Data Modeling
 
-A simple backend API using **Node.js**, **Express**, and **MongoDB (Mongoose)** to manage users, todos, and nested subtasks.
+A simple backend API using **Node.js**, **Express**, and **MongoDB (Mongoose)** to understand the importance of data modeling
 
 ---
 

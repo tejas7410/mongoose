@@ -1,6 +1,5 @@
 import mongoose from "mongoose";
-
-const SubTodoSchema = new mongoose.Schema(
+const TodoSchema = new mongoose.Schema(
     {
         Title: {
             type: String,
@@ -10,16 +9,20 @@ const SubTodoSchema = new mongoose.Schema(
             type: String,
             required: true
         },
-        Completed: {
-            type: Boolean,
-            default: false
-        },
         UserId: {
             type: mongoose.Schema.Types.ObjectId,
             ref: "User",
             required: true
-        }
+        },
+        SubTodos: [
+            {
+                type: mongoose.Schema.Types.ObjectId,
+                ref: "SubTodo"
+            }
+        ]
+    },
+    {
+        timestamps: true
     }
 );
-
-export const SubTodo = mongoose.model("SubTodo", SubTodoSchema);
+export const Todo = mongoose.model("Todo", TodoSchema);
