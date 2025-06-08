@@ -31,12 +31,10 @@ const productSchema = new mongoose.Schema(
             required: true,
             min: 0
         },
-        imageUrl: {
+        imageUrl: [{
             type: String,
-            required: false,
             trim: true
-        }
-    }
-    , { timestamps: true });
+        }]
+    }, { timestamps: true });
 
 export const Product = mongoose.model("Product", productSchema);
